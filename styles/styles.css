@@ -1,0 +1,65 @@
+@import url(normalize.css);
+@import url(global-styles.css);
+@import url(var.css);
+
+@import url(home-screen.css);
+@import url(advantages-screen.css);
+@import url(contact-screen.css);
+@import url(footer.css);
+
+
+body {
+    font-family: Roboto;
+}
+
+.container {
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+
+.logo {
+    height: 68px;
+    width: 68px;
+}
+
+
+.phone-num-link.hidden {
+    display: none;
+}
+
+@media (max-width:1024px) {
+
+    .container {
+        max-width: 812px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media (max-width:320px) {
+    .container {
+        max-width: 290px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        height: 30px;
+        width: 30px;
+    }
+
+    .phone-num-link:not(.hidden) {
+        display: none;
+    }
+
+    .phone-num-link.hidden {
+        display: block;
+        height: 24px;
+        width: 24px;
+        border-radius: 50px;
+    }
+}
